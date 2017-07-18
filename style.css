@@ -6,6 +6,7 @@ body {
   background: #301F1B;
   color: #4E312B;
   font-family: 'Gabriela', serif;
+  opacity: 0.8;
 }
 
 .container {
@@ -13,9 +14,14 @@ body {
   min-width: 380px;
   margin: 50px auto 0;
   padding: 20px;
-  background: #F3E5B6;
+  background-color: #CFC8BE;
+  background-image: url(img/bg-parchment.jpg);
+  background-position: center;
   text-align: center;
-  border: 2px solid #4E312B;
+  border: 5px solid #4E312B;
+  -webkit-box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.4);
 }
 
 h1 {
@@ -30,7 +36,7 @@ h2 {
 
 button {
   height: 50px;
-  background: #F3E5B6;
+  background: #F2E9D9;
   border: 2px solid #4E312B;
   border-radius: 5px;
   color: #4E312B;
@@ -38,7 +44,7 @@ button {
 
 select {
   height: 50px;
-  background: #F3E5B6;
+  background: #F2E9D9;
   color: #4E312B;
   border: 2px solid #4E312B;
   border-radius: 5px;
