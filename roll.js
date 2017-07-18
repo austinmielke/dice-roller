@@ -6,22 +6,22 @@ var maxRoll = 6;
 var rollDisplayValue;
 
 //Functions Defined
-function randomRoll(){
-  return Math.floor(Math.random() * maxRoll +1);
+function randomRoll() {
+  return Math.floor(Math.random() * maxRoll + 1);
 }
 
-numInput.addEventListener("change", function(){
+numInput.addEventListener("change", function() {
   maxRoll = Number(this.value);
 });
 
-rollButton.addEventListener("click", function(){
+rollButton.addEventListener("click", function() {
   rollDisplay.classList.remove("criticalFailure", "criticalHit");
   rollDisplayValue = randomRoll();
-  if (rollDisplayValue === 1){
+  if (rollDisplayValue === 1) {
     rollDisplayValue += " - Critical Failure!";
     rollDisplay.classList.add("criticalFailure");
   }
-  if (rollDisplayValue === maxRoll){
+  if (rollDisplayValue === maxRoll) {
     rollDisplayValue += " - Critical Hit!";
     rollDisplay.classList.add("criticalHit");
   }
